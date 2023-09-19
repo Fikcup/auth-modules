@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "build": "rimraf build && tsc && cp -rf package.json build",
+    "build": "npx rimraf build && tsc && cp -rf package.json build",
     "dry-run": "npm run build && cd build && npm publish --dry-run --ignore-scripts",
     "dist": "npm run build && cd build && npm publish --ignore-scripts"
   },
@@ -17,6 +17,7 @@
     "typeorm": "^0.3.17"
   },
   "devDependencies": {
+    "rimraf": "^5.0.1",
     "typescript": "^4.9.4"
   }
 }
