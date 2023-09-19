@@ -1,0 +1,21 @@
+{
+  "name": "@fikcup/models",
+  "version": "1.0.0",
+  "description": "Common Database Models.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "rimraf build && tsc && cp -rf package.json build",
+    "dry-run": "npm run build && cd build && npm publish --dry-run --ignore-scripts",
+    "dist": "npm run build && cd build && npm publish --ignore-scripts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
