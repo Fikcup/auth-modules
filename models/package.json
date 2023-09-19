@@ -13,9 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@synconset/typeormutils": "^1.0.1",
     "typeorm": "^0.3.17"
   },
   "devDependencies": {
-    "typescript": "^5.2.2"
+    "typescript": "^4.9.4"
   }
 }
